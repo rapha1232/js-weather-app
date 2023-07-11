@@ -6,11 +6,12 @@ Displays current weather information, including temperature, weather condition, 
 Allows users to search for weather updates in different locations by entering a city name or ZIP code.
 Automatically detects and displays the user's current location weather.
 Provides a visually appealing and responsive design that works well on both desktop and mobile devices.
-Technologies Used
-JavaScript: The core programming language used to build the weather app.
-HTML: Used for the structure and layout of the web page.
-CSS: Used for styling and visual enhancements.
-<sub>OpenWeatherMap API:</sub> Utilized to retrieve weather data.
+
+### Technologies Used
+- JavaScript: The core programming language used to build the weather app.
+- HTML: Used for the structure and layout of the web page.
+- CSS: Used for styling and visual enhancements.
+- <u><a href="https://www.weatherapi.com">Weather API:</a></u> Utilized to retrieve weather data.
 
 ### Getting Started
 To run the weather app locally on your machine, follow these steps:
