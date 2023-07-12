@@ -1,0 +1,311 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-image: url(../media/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 10vh;
+}
+
+.mainLogo {
+  width: 4rem;
+  background-color: transparent;
+  align-self: center;
+  justify-self: center;
+}
+
+h1 {
+  align-self: center;
+  margin: 0;
+  font-size: 3rem;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(104, 151, 92);
+  text-align: center;
+  word-wrap: break-word;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 40rem;
+  margin: 2em 0;
+}
+
+.input {
+  flex: 1;
+  height: 3.5rem;
+  padding: 0 1rem;
+  color: #000;
+  font-size: 1.2em;
+  border: 1px solid rgb(104, 151, 92);
+  border-radius: 2em;
+  background-color: transparent;
+  margin-right: 1em;
+}
+
+.submitBtn {
+  min-height: 3.5rem;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 2em;
+  background-color: rgb(104, 151, 92);
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.submitBtn:hover {
+  background-color: rgb(113, 158, 102);
+}
+
+.input:focus,
+.input:focus-visible {
+  border-color: rgb(52, 145, 34);
+  outline: none;
+}
+
+.helloContainer {
+  margin-top: 15vh;
+  border-radius: 1em;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.helloContainer p {
+  font-size: 2em;
+  margin: 1em 0;
+}
+
+.helloContainer span {
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: bolder;
+  color: rgb(83, 107, 78);
+}
+
+.container {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+  margin-top: 15vh;
+  box-sizing: border-box;
+}
+
+.city-box {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.city {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.date {
+  margin: 0 0 2em 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.weather-box {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 1em;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.temp-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 1em;
+  border-radius: 1em;
+  margin: 0;
+  font-size: 1em;
+}
+
+.icon {
+  margin-right: 1em;
+}
+
+.temp {
+  text-align: center;
+}
+
+.degree {
+  font-size: 2em;
+  font-weight: bolder;
+  color: #333;
+  margin: 0.5em 0;
+}
+
+.description {
+  font-size: 18px;
+  color: #777;
+}
+
+.detail-box {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 1em;
+  border-radius: 1em;
+  font-size: 1em;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.4em;
+  border-bottom: 1px solid #777;
+}
+
+.info-box {
+  text-align: center;
+}
+
+.data {
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.label {
+  font-size: 12px;
+  color: #777;
+}
+
+@media screen and (max-width: 768px) {
+  .helloContainer {
+    margin-top: 10vh;
+  }
+
+  .container {
+    margin-top: 10vh;
+  }
+  
+  .input-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .input {
+    margin-bottom: 1em;
+  }
+  
+  .submitBtn {
+    margin-top: 1em;  
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  header {
+    margin: 10px;
+  }
+
+  .mainLogo {
+    width: 3rem;
+  }
+
+  h1 {
+    margin: 0 0 2rem 0;
+    font-size: 2rem;
+  }
+
+  form {
+    gap: 0.5em;
+  }
+
+  .helloContainer {
+    margin-top: 40vh;
+    padding: 1em;
+    font-size: 1.5em;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .city-box {
+    margin-bottom: 5px;
+  }
+
+  .city {
+    font-size: 20px;
+  }
+
+  .date {
+    margin-bottom: 1em;
+    font-size: 12px;
+  }
+
+  .weather-box {
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+  }
+
+  .temp-box {
+    padding: 0.5em;
+  }
+
+  .degree {
+    font-size: 1.5em;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .detail-box {
+    padding: 0.5em;
+    font-size: 0.9em;
+  }
+
+  .row {
+    margin-bottom: 0.2em;
+  }
+
+  .label {
+    font-size: 10px;
+  }
+}

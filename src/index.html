@@ -5,9 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rapha's Weather App</title>
     <link href="./index.css" rel="stylesheet" type="text/css"></link>
+    <link rel="icon" href="../media/mainLogo.png">
 </head>
 <body>
-    
+    <header>
+    <img src="../media/mainLogo.png" class="mainLogo"></img>
+    <h1>Rapha's Weather</h1>
+    <form method="GET">
+        <div class="input-group">
+            <input type="text" class="input" id="cityIn" name="cityName" placeholder="Enter city name:" autocomplete="off">
+            <input class="submitBtn" value="Search" type="submit">
+        </div>
+    </form>
+</header>
+    <div class="helloContainer">
+            <p>Welcome to my weather app!</p>
+            <p>😊</p>
+            <p>Please enter a <span>city name</span> and press <span>search</span> to get the weather information.</p>
+    </div>
+    <div class="container">
+        <div class="city-box">
+          <h2 class="city">City, Country</h2>
+          <h4 class="date">Date and Time</h4>
+        </div>
+      
+        <div class="weather-box">
+          <div class="temp-box">
+            <div class="icon">
+              <img src="../media/day/113.png" alt="Weather Icon" id="weatherIcon">
+            </div>
+            <div class="temp">
+              <p class="degree">25°C</p>
+              <span class="description">Sunny</span>
+            </div>
+          </div>
+      
+          <div class="detail-box">
+            <div class="row">
+              <section class="info-box high">
+                <p class="data">30°C</p>
+                <span class="label">High</span>
+              </section>
+              <section class="info-box sunrise">
+                <p class="data">7:00 AM</p>
+                <span class="label">Sunrise</span>
+              </section>
+              <section class="info-box wind">
+                <p class="data">10 km/h</p>
+                <span class="label">Wind</span>
+              </section>
+            </div>
+            <div class="row">
+              <section class="info-box low">
+                <p class="data">18°C</p>
+                <span class="label">Low</span>
+              </section>
+              <section class="info-box sunset">
+                <p class="data">6:00 PM</p>
+                <span class="label">Sunset</span>
+              </section>
+              <section class="info-box humidity">
+                <p class="data">70%</p>
+                <span class="label">Humidity</span>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>   
     <script src="./index.js"></script>
 </body>
 </html>
